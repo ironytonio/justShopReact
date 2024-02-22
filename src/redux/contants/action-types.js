@@ -1,0 +1,5 @@
+export const ActionTypes = {
+  SET_PRODUCTS: "SET_PRODUCTS", //можно использовать = вместо :
+  SELECTED_PRODUCT: "SELECTED_PRODUCT",
+  REMOVE_SELECTED_PRODUCT: "REMOVE_SELECTED_PRODUCT",
+};
