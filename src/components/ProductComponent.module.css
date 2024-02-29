@@ -1,0 +1,39 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px; 
+  width: 100vw;
+  overflow-x: hidden;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10%;
+  transition:transform 0.3s ease-in;
+  z-index: 1;
+}
+.cards:hover{
+   transform: scale(1.1);
+}
+.card {
+  height: 600px;
+  padding: 1rem;
+  color:black;
+  
+}
+.imageContainer {
+  height: 70%;
+  overflow: hidden;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.image {
+  max-width: 90%;
+  max-height: 100%;
+}
+.link {
+    text-decoration: none;
+}
