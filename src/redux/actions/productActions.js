@@ -21,6 +21,8 @@ export const addToCart = (product) => {
   }
 }
 
+
+
 export const removeFromCart = (productId) => {
   return {
     type: ActionTypes.REMOVE_FROM_CART,

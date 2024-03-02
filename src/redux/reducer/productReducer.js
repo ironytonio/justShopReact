@@ -27,23 +27,29 @@ const initialStateTwo = {
   cart: [],
 };
 
-export const addCartReducer = (state = initialStateTwo , { type, payload }) => {
+export const addCartReducer = (state = initialStateTwo , { type , payload }) => {
   switch (type) {
     case ActionTypes.ADD_TO_CART:
-      return { ...state, cart: [...state.cart, payload] };
+      const existingItemIndex = state.cart.findIndex(index => index.id === payload.id)
+
+      if (existingItemIndex !== -1) {
+        return state
+      }
+      return { ...state, 
+      cart: [...state.cart, payload] };
     default:
       return state;
   }
 };
 
-
-
-
-export const returnCartReducer = (state = {} , {type ,payload}) => {
+export const removeCartReducer = (state = initialStateTwo, { type , payload }) => {
   switch (type) {
     case ActionTypes.REMOVE_FROM_CART:
-      return {...state , cart:state.cart.filter((item) => item.id !== payload),};
+      return {
+        ...state,
+        cart:state.cart.filter(item => item.id !== payload)
+      };
     default:
-      return state
+      return state;
   }
-}
+};

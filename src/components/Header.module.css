@@ -26,6 +26,10 @@
     border: 0.5px solid black ;
 }
 .icon{
+    color:black;
     font-size: 2rem;
 }
-
+.nameBox{
+    color:black;
+    text-decoration: none;
+}
