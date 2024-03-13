@@ -8,3 +8,29 @@
   height: 100%;
   position: relative;
 }
+
+.btn {
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: blanchedalmond;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+h4 {
+  font-family: "Madimi one", sans-serif;
+}
+h3 {
+  font-family: "Madimi one", sans-serif;
+}

@@ -15,13 +15,11 @@ export const selectedProducts = (product) => {
 };
 
 export const addToCart = (product) => {
-  return{
+  return {
     type: ActionTypes.ADD_TO_CART,
-    payload:product,
-  }
-}
-
-
+    payload: product,
+  };
+};
 
 export const removeFromCart = (productId) => {
   return {

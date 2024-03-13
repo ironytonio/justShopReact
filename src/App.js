@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductListing />} />{" "}
           <Route path="/product/:productId" element={<ProductDetails />} />{" "}
-          <Route path="/basket" element={<Basket/>} />
+          <Route path="/basket" element={<Basket />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
           {/* "*" означає любий елемент (в випадку якщо не спраюють інші то буду він)*/}
         </Routes>

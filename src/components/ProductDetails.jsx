@@ -14,8 +14,8 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product))
-  }
+    dispatch(addToCart(product));
+  };
 
   useEffect(() => {
     const fetchProductDetail = async () => {
@@ -37,17 +37,21 @@ const ProductDetails = () => {
   return (
     <div>
       {Object.keys(product).length === 0 ? (
-        <div>Loading</div>
+        <div>Loading...</div>
       ) : (
         <div className={q.container}>
           <div className={q.contImg}>
-            <img src={image} alt="zaraza" className={q.img}/>
+            <img src={image} alt="zaraza" className={q.img} />
           </div>
           <div className={q.box}>
             <h1 className={q.title}>{title}</h1>
-            <div className={q.colorBox}><h2>${price}</h2></div>
-            <button onClick={handleAddToCart}>Add</button>
-            <h4>{category}</h4>
+            <div className={q.colorBox}>
+              <h2>${price}</h2>
+            </div>
+            <button class="btn" onClick={handleAddToCart}>
+              Add
+            </button>
+            <h4 className={q.category}>{category}</h4>
             <p>{description}</p>
           </div>
         </div>

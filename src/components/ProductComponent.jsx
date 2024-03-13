@@ -11,27 +11,29 @@ const ProductComponent = () => {
       const { id, title, image, price, category } = product;
       return (
         <div key={id}>
-            <Link to={`/product/${id}`} className={q.link}>
-          <div className={q.cards}>
-            <div className={q.card}>
-              <div className={q.imageContainer}>
-                <img src={image} alt={title} className={q.image} />
-              </div>
+          <Link to={`/product/${id}`} className={q.link}>
+            <div className={q.cards}>
+              <div className={q.card}>
+                <div className={q.imageContainer}>
+                  <img src={image} alt={title} className={q.image} />
+                </div>
 
-              <div>
-                <div className={q.header}>
-                  <h3 style={{ textDecoration: 'none' }} className={q.title}>{title}</h3>
-                </div>
                 <div>
-                  <h2 className={q.price}>${price}</h2>
-                </div>
-                <div>
-                  <h4 className={q.category}>{category}</h4>
+                  <div className={q.header}>
+                    <h3 style={{ textDecoration: "none" }} className={q.title}>
+                      {title}
+                    </h3>
+                  </div>
+                  <div>
+                    <h2 className={q.price}>${price}</h2>
+                  </div>
+                  <div>
+                    <h4 className={q.category}>{category}</h4>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-            </Link>
+          </Link>
         </div>
       );
     });

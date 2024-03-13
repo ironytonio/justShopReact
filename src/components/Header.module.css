@@ -13,23 +13,27 @@
   background: transparent;
   backdrop-filter: blur(10px);
 }
-.box{
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 99%;
-    align-items: center;
+.box {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 99%;
+  align-items: center;
 }
-.circle{
-    border-radius: 50px;
-    border: 0.5px solid black ;
+.icon {
+  color: black;
+  font-size: 2rem;
 }
-.icon{
-    color:black;
-    font-size: 2rem;
+.icon:hover {
+  color: rgb(102, 93, 93);
 }
-.nameBox{
-    color:black;
-    text-decoration: none;
+.nameBox {
+  text-decoration: none;
+}
+.name {
+  color: black;
+}
+.name:hover {
+  color: rgb(102, 93, 93);
 }

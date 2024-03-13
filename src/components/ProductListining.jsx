@@ -1,6 +1,5 @@
-// ProductListing.jsx
 import React, { useEffect } from "react";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import ProductComponent from "./ProductComponent";
 import axios from "axios";
 import { setProducts } from "../redux/actions/productActions";

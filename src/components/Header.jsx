@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-const id = useSelector(state=>state.cart)
-console.log(id)
+  const id = useSelector((state) => state.cart);
+  console.log(id);
 
   return (
     <div className={q.container}>
       <div className={q.box}>
-        <Link to='/' className={q.nameBox}>
-        <h1 className={q.name}>FakeShop</h1>
+        <Link to="/" className={q.nameBox}>
+          <h1 className={q.name}>FakeShop</h1>
         </Link>
         <Link to="/basket" className={q.basket}>
-          <div className={q.circle}>{id}</div>
           <FaBasketShopping className={q.icon} />
         </Link>
       </div>
